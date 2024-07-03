@@ -4,16 +4,22 @@ class Movies{
     public $genre;
     public $length;
 
+    /**
+     * This function is the constructor of the class Movies
+     *
+     * @param [type] $title
+     * @param [type] $genre
+     * @param [type] $length
+     */
     function __construct ($title, $genre, $length){
         $this->title = $title;
         $this->genre = $genre;
         $this->length = $length;
 
     /**
-     * The above function is a PHP method named getTitle that returns the value of the title property of
-     * the class instance.
-     * 
-     * @return The `getTitle` method is returning the value of the `title` property of the object.
+     * This function returns the title of the movie
+     *
+     * @return title
      */
     }
     public function getTitle(){
@@ -21,19 +27,19 @@ class Movies{
     }
 
     /**
-     * The getGenre function in PHP returns the genre of an object.
-     * 
-     * @return The `genre` property of the object is being returned by the `getGenre` method.
+     * This function returns the genre of the movie
+     *
+     * @return genre
      */
     public function getGenre(){
         return $this->genre;
     }
     
     /**
-   * The getLength function in PHP returns the length property of the object.
-   * 
-   * @return The `length` property of the object is being returned.
-   */
+     * This function returns the length of the movie
+     *
+     * @return length
+     */
     public function getLength(){
         return $this->length;
     }
@@ -46,7 +52,4 @@ $Interstellar = new Movies("Interstellar", "Sci-Fi", 230);
 $TheLegendOfAlJohnAndJack = new Movies("The legend of Al, John & Jack", "Comedy", 100);
 
 
-var_dump($Star_Wars);
-var_dump($Avengers);
-var_dump($Interstellar);   
-var_dump($TheLegendOfAlJohnAndJack);
+var_dump($Star_Wars, $Avengers, $Interstellar, $TheLegendOfAlJohnAndJack);
