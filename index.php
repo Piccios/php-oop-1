@@ -9,6 +9,15 @@ class Movies{
         $this->genre = $genre;
         $this->length = $length;
     }
+    public function getTitle(){
+        return $this->title;
+    }
+    public function getGenre(){
+        return $this->genre;
+    }
+    public function getLength(){
+        return $this->length;
+    }
 }
 
 
